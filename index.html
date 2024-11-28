@@ -1,0 +1,47 @@
+<html>
+  <header>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </header>
+  <body>
+    <div class="container mt-3 pb-3">
+      <h1 class=" fit-content text-center mx-auto mt-3">Bookmarker</h1>
+       <span class="position-relative"></span>
+       <h3 class="text-center"><i class="mx-3 fa-solid fa-bookmark mt-3"></i>Bookmark Your Favourite Site<i class="mx-3 fa-solid fa-bookmark"></i></h3>
+       <label for="SiteName" class="fs-4 mt-5"> <i class="fa-solid fa-book-bookmark"></i> Site Name : </label>
+       <input oninput="ValidationSiteName()" placeholder="Bookmark Name" class="form-control" type="text" name="Bookmark_name" id="SiteName">
+       <label for="WebsiteUrl" class="fs-4 mt-3"> <i class="fa-solid fa-link"></i> Site URL : </label>
+       <input oninput="ValidationUrl()" placeholder="Website URL" class="form-control" type="url" name="Website_Url" id="WebsiteUrl">
+       <div class="d-flex">
+        <button id="SubmitBtn" type="button" class="mt-5 mx-auto btn btn-warning">Submit</button>
+       </div>
+      <span class="position-relative"></span>
+     <table class="table mt-5 text-center">
+     <thead>
+      <tr>
+
+          <th class="align-content-center justify-content-center"><div>Index</div></th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+      </tr>
+     <thead id="TableContent">
+
+     </thead>
+     </table>
+    </div>
+
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Js/main.js"></script>
+  </body>
+</html>
